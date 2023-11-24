@@ -1,0 +1,128 @@
+body{
+  background-color: #e9c46a;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  
+
+}
+
+.noteSquare{
+  width: 35%;
+  height: auto;
+  background-color: #f5ebe0;
+  margin-top: 10%;
+  border-radius: 10%; 
+  text-align: center;
+  
+}
+
+#input{
+  width: 60%;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #fefae0;
+  cursor: pointer;
+}
+
+#addBtn{
+  width: auto;
+  height: 30px;
+  cursor: pointer;
+  margin-left: 3%;
+  transition: 0.3s ease-in-out;
+}
+
+#addBtn:hover{
+    transform: rotate(90deg);
+}
+
+#inputPlace{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.divNotes{
+  width: 90%;
+  height: 3rem;
+  background-color: #dad7cd;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+}
+#notes{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.deleteBtn{
+  width: 30px;
+  height: 30px;
+  
+}
+
+.editBtn{
+  width: 40px; 
+}
+
+.divNotes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+
+.divNotes span {
+  flex-grow: 1;
+  font-size: small;  
+}
+
+
+.editBtn, .deleteBtn {
+  margin-left: 10px; 
+  cursor: pointer; 
+}
+
+
+
+@media only screen and (max-width: 660px) {
+  .noteSquare{
+    width: 80%;
+  }   
+}
+
+@media only screen and (max-width: 725px) {
+  .noteSquare{
+    width: 60%;
+  }   
+  .editBtn, .deleteBtn {
+    width: 20px; 
+    cursor: pointer;
+    height: 20px;
+  }
+  
+}
+
+
+
+
+@media only screen and (max-width: 360px) {
+  .noteSquare{
+    width: 80%;
+    height: 100%;
+    background-color: #f5ebe0;
+  }   
+
+
+}
+
